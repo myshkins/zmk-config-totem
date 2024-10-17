@@ -44,9 +44,9 @@ label= "BASE"                              ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃     Q     ┃     W     ┃     E     ┃     R     ┃     T     ┃   ┃     Y     ┃     U     ┃     I     ┃     O     ┃     P     ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃   A (ALT) ┃  S (SYM)  ┃  D (NAV)  ┃  F (SHFT) ┃  G (GUI)  ┃   ┃  H (LGUI) ┃  J (SHFT) ┃  K (NAV)  ┃  L (SYM)  ┃  ' (ALT)  ┃
+//             ┃   A (ALT) ┃  S (SYM)  ┃  D (NAV)  ┃  F (SHFT) ┃  G (NUM)  ┃   ┃  H (LGUI) ┃  J (SHFT) ┃  K (NAV)  ┃  L (SYM)  ┃  ' (ALT)  ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃ ESC (ADJ) ┃     Z     ┃     X     ┃     C     ┃   V (NUM) ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     ;     ┃   / (ADJ) ┃
+// ┃ ESC (ADJ) ┃     Z     ┃     X     ┃     C     ┃     V     ┃  B (GUI)  ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     ;     ┃   / (ADJ) ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃    TAB    ┃ BACKSPACE ┃   LCTRL   ┃   ┃   RCTRL   ┃   SPACE   ┃   ENTER   ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -54,8 +54,8 @@ label= "BASE"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
-                &mt LALT A  &lt SYM S   &lt NAV D   &mt LSHFT F &mt LGUI G      &mt RGUI H  &mt RSHFT J &lt NAV K   &lt SYM L   &mt RALT SQT
-    &lt ADJ ESC &kp Z       &kp X       &kp C       &lt NUM V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp SEMI    &lt ADJ FSLH
+                &mt LALT A  &lt SYM S   &lt NAV D   &mt LSHFT F &lt NUM G       &mt RGUI H  &mt RSHFT J &lt NAV K   &lt SYM L   &mt RALT SQT
+    &lt ADJ ESC &kp Z       &kp X       &kp C       &kp V       &mt LGUI B      &kp N       &kp M       &kp COMMA   &kp DOT     &kp SEMI    &lt ADJ FSLH
                                         &kp TAB     &kp BSPC    &kp LCTRL       &kp RCTRL   &kp SPACE   &kp RET
                         >;
                 };
@@ -96,19 +96,19 @@ label= "NAV"                               ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃  SYSREQ   ┃     F1    ┃     F2    ┃     F3    ┃     F4    ┃   ┃           ┃           ┃           ┃           ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃           ┃     F5    ┃     F6    ┃     F7    ┃     F8    ┃   ┃    LEFT   ┃    DOWN   ┃     UP    ┃   RIGHT   ┃           ┃
+//             ┃    ESC    ┃     F5    ┃     F6    ┃     F7    ┃     F8    ┃   ┃    LEFT   ┃    DOWN   ┃     UP    ┃   RIGHT   ┃    ESC    ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃    ESC    ┃           ┃     F9    ┃     F10   ┃     F11   ┃     F12   ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+// ┃           ┃           ┃     F9    ┃     F10   ┃     F11   ┃     F12   ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp SYSREQ  &kp F1      &kp F2      &kp F3      &kp F4          &trans      &trans      &trans      &trans      &trans
-                &trans      &kp F5      &kp F6      &kp N6      &kp F8          &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &trans
-    &kp ESC     &trans      &kp F9      &kp F10     &kp F11     &kp F12         &trans      &trans      &trans      &trans      &trans      &trans
-                                        &trans      &mo ADJ     &trans          &trans      &trans      &trans
+                &kp SYSREQ &kp F1      &kp F2      &kp F3      &kp F4          &trans      &trans      &trans      &trans      &trans
+                &kp ESC    &kp F5      &kp F6      &kp N6      &kp F8          &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp ESC
+    &trans      &trans     &kp F9      &kp F10     &kp F11     &kp F12         &trans      &trans      &trans      &trans      &trans      &trans
+                                       &trans      &trans      &trans          &trans      &trans      &trans
                        >;
                 };
 
