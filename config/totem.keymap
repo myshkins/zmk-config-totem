@@ -44,7 +44,7 @@
         lht: left_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "balanced";
             tapping-term-ms = <100>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
@@ -53,7 +53,7 @@
         rht: right_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "balanced";
             tapping-term-ms = <100>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
@@ -62,7 +62,7 @@
         llt: left_layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "balanced";
             tapping-term-ms = <100>;
             quick-tap-ms = <200>;
             bindings = <&mo>, <&kp>;
@@ -71,7 +71,7 @@
         rlt: right_layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "balanced";
             tapping-term-ms = <100>;
             quick-tap-ms = <200>;
             bindings = <&mo>, <&kp>;
