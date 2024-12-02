@@ -48,7 +48,7 @@
             tapping-term-ms = <300>;
             quick-tap-ms = <250>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 34>;    // <---[[right-hand keys]]
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 35 36 37>;    // <---[[right-hand keys]]
             hold-trigger-on-release;
         };
         rst: right_shift_tap {
@@ -58,7 +58,7 @@
             tapping-term-ms = <300>;
             quick-tap-ms = <250>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 21 22 23 24 25 35>;    // <---[[left-hand keys]]
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 21 22 23 24 25 32 33 34>;    // <---[[left-hand keys]]
             hold-trigger-on-release;
         };
         lht: left_hold_tap {
@@ -69,7 +69,7 @@
             quick-tap-ms = <250>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 34>;    // <---[[right-hand keys]]
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 35 36 37>;    // <---[[right-hand keys]]
             hold-trigger-on-release;
         };
         rht: right_hold_tap {
@@ -80,7 +80,7 @@
             quick-tap-ms = <250>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 21 22 23 24 25 35>;    // <---[[left-hand keys]]
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 21 22 23 24 25 32 33 34>;    // <---[[left-hand keys]]
             hold-trigger-on-release;
         };
         llt: left_layer_tap {
@@ -91,7 +91,7 @@
             quick-tap-ms = <250>;
             require-prior-idle-ms = <125>;
             bindings = <&mo>, <&kp>;
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30>;    // <---[[right-hand keys]]
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 35 36 37>;    // <---[[right-hand keys]]
             hold-trigger-on-release;
         };
         rlt: right_layer_tap {
@@ -102,7 +102,7 @@
             quick-tap-ms = <250>;
             require-prior-idle-ms = <125>;
             bindings = <&mo>, <&kp>;
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 21 22 23 24 25>;    // <---[[left-hand keys]]
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 21 22 23 24 25 32 33 34>;    // <---[[left-hand keys]]
         };
     };
     keymap {
@@ -166,21 +166,21 @@ label= "NUM"                               ;
 label= "NAV"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃  SYSREQ   ┃     F1    ┃     F2    ┃     F3    ┃     F4    ┃   ┃           ┃           ┃           ┃           ┃           ┃
+//             ┃     F1    ┃     F2    ┃     F3    ┃     F4    ┃     F5    ┃   ┃           ┃           ┃           ┃           ┃   SYSREQ  ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃    ESC    ┃     F5    ┃     F6    ┃     F7    ┃     F8    ┃   ┃    LEFT   ┃    DOWN   ┃     UP    ┃   RIGHT   ┃    ESC    ┃
+//             ┃     F6    ┃     F7    ┃     F8    ┃     F9    ┃     F10   ┃   ┃    LEFT   ┃    DOWN   ┃     UP    ┃   RIGHT   ┃    CTRL   ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃           ┃     F9    ┃     F10   ┃     F11   ┃     F12   ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+// ┃           ┃     F11   ┃     F12   ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
+//                                     ┃    TAB    ┃    SHFT   ┃    ALT    ┃   ┃    ALT    ┃   SPACE   ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp SYSREQ &kp F1      &kp F2      &kp F3      &kp F4          &trans      &trans      &trans      &trans      &trans
-                &kp ESC    &kp F5      &kp F6      &kp N6      &kp F8          &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp ESC
-    &trans      &trans     &kp F9      &kp F10     &kp F11     &kp F12         &trans      &trans      &trans      &trans      &trans      &trans
-                                       &trans      &trans      &trans          &trans      &trans      &trans
+                &kp F1     &kp F2      &kp F3      &kp F4      &kp F6          &trans      &trans      &trans      &trans      &kp SYSREQ
+                &kp F6     &kp F7      &kp F8      &kp F9      &kp F10         &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp RCTRL
+    &trans      &kp F11    &kp F12     &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans
+                                       &kp TAB     &kp LSHFT   &kp LALT        &kp RALT    &kp SPACE   &trans
                        >;
                 };
 
@@ -195,9 +195,9 @@ label= "SYM"                               ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃     ESC   ┃     `     ┃           ┃     ^     ┃     {     ┃   ┃     }     ┃     +     ┃     %     ┃     ~     ┃     |     ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃     !     ┃     @     ┃     #     ┃     $     ┃     (     ┃   ┃     )     ┃     =     ┃     *     ┃     _     ┃     ?     ┃
+//             ┃     !     ┃     @     ┃     #     ┃     $     ┃     (     ┃   ┃     )     ┃     -     ┃     *     ┃     _     ┃     ?     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃     &     ┃           ┃           ┃           ┃     [     ┃   ┃     ]     ┃     -     ┃           ┃     \     ┃     /     ┃           ┃
+// ┃           ┃     &     ┃           ┃           ┃           ┃     [     ┃   ┃     ]     ┃     =     ┃           ┃     \     ┃     /     ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -205,7 +205,7 @@ label= "SYM"                               ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp ESC     &kp GRAVE   &trans      &kp CARET  &kp LBRC        &kp RBRC   &kp PLUS    &kp PRCNT    &kp TILDE    &kp PIPE
-                &kp EXCL    &kp AT      &kp HASH    &kp DLLR   &kp LPAR        &kp RPAR   &kp EQUAL   &kp ASTRK    &kp UNDER    &kp QMARK 
+                &kp EXCL    &kp AT      &kp HASH    &kp DLLR   &kp LPAR        &kp RPAR   &kp MINUS   &kp ASTRK    &kp UNDER    &kp QMARK 
     &trans      &kp AMPS    &trans      &trans      &trans     &kp LBKT        &kp RBKT   &kp MINUS   &kp PLUS     &kp BSLH     &kp SLASH     &trans
                                         &trans      &trans     &trans          &trans     &trans      &trans
                         >;
